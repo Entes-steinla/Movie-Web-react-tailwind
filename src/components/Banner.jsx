@@ -48,7 +48,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="md:w-[50%] w-full flex items-center justify-center">
+        <div className="hidden md:w-[50%] w-full md:flex items-center justify-center">
           <div className="w-[300px] h-[400px] relative group">
             <button className="w-full h-full absolute top-0 left-0 flex items-center justify-center backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
               <img src={IconPlay} alt="play" className="w-16 h-16" />
