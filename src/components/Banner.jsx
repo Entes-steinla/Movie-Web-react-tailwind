@@ -5,7 +5,7 @@ import IconPlay from "../assets/play-button.png";
 
 const Banner = () => {
   return (
-    <div className="relative bg-banner bg-cover bg-no-repeat bg-center mt-[75px] w-full h-[1000px] md:h-[600px]">
+    <div className="relative bg-banner bg-cover bg-no-repeat bg-center mt-[50px] md:mt-[75px] w-full h-[800px] md:h-[600px]">
       <div className="bg-black/40 w-full h-full" />
       <div className="top-10 md:top-1/2 left-1/2 absolute flex md:flex-row flex-col justify-between items-center w-full -translate-x-1/2 md:-translate-y-1/2">
         <div className="w-full md:w-[50%]">
