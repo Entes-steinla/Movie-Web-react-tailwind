@@ -5,9 +5,9 @@ const Header = ({ onSearch }) => {
   const [search, setSearch] = useState("");
 
   return (
-    <div className="p-4 flex justify-between  fixed top-0 left-0 w-full z-[9999]  bg-black">
+    <div className="top-0 left-0 z-[9999] fixed flex justify-between bg-black p-4 w-full">
       <div className="flex items-center gap-8">
-        <h1 className="text-[30px] uppercase text-red-700 font-bold">Movie</h1>
+        <h1 className="font-bold text-[30px] text-red-700 uppercase">Movie</h1>
         <nav className="hidden md:flex items-center space-x-7">
           <a href="#" className="hover:text-red-700">
             Home
@@ -24,12 +24,12 @@ const Header = ({ onSearch }) => {
         <input
           type="text"
           placeholder="Search"
-          className="border border-gray-300 py-1 pl-3 text-black bg-gray-100 rounded-md"
+          className="bg-gray-100 py-1 pl-3 rounded-md w-[100px] sm:w-full text-black"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
         <button
-          className="bg-red-700 text-white px-3 py-1 rounded-md font-bold"
+          className="bg-red-700 px-3 py-1 rounded-md font-bold text-white"
           onClick={() => onSearch(search)}
         >
           Search
